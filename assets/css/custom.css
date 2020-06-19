@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/*  COLOR REFERENCES VARIABLES
+    Green: #79b044
+    Salmon: #dd5638
+    Blue-Gray: #3e4249
+    
+    ex.to use these variables,
+    atribute: var(--Green);
+*/
+
+:root {
+  --Green: #79b044;
+  --Salmon: #dd5638;
+  --BlueGray: #3e4249;
+  --kindaBlack: #101010;
+  --btnBorder: #d95131;
+  --justWhite: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-top: 50px;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background: url("../img/tile.jpg") top left repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+button,
+input,
+.btn,
+a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: var(--justWhite);
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: var(--Salmon);
+  border-color: var(--btnBorder);
+}
+
+img {
+  max-width: 100%;
+}
+
+#hero {
+  background: url("../img/hero-bg.jpg") 50% 0 repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: var(--justWhite);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#hero article {
+  width: 100%;
+  text-align: center;
+}
+
+#hero .hero-text {
+  margin-top: 30px;
+}
+
+#price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+}
+
+#price-timeline .price {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  width: 30%;
+  background: var(--BlueGray);
+  padding: 10px 20px 30px;
+  position: relative;
+  vertical-align: top;
+}
+
+#price-timeline .price .active {
+  background: var(--Salmon);
+}
+
+#price-timeline .price span {
+  background: var(--kindaBlack);
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -35px;
+}
+
+#price-timeline h4 {
+  margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+  color: var(--justWhite);
+  font-weight: bold;
+  display: block;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+}
+
+section h2 {
+  margin: 20px 0 40px;
+}
+
+section h3 {
+  margin: 30px 0 10px;
+}
+
+#optin {
+  background: var(--BlueGray);
+  padding: 20px 0;
+  color: var(--justWhite);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2em;
+}
+
+#optin p {
+  margin: 7px 0 0 0;
+}
+
+.lead span {
+  margin-left: 10px;
+}
+
+#who-benefits {
+  background: var(--justWhite);
+}
+
+#course-features {
+  background: var(--BlueGray);
+  color: var(--justWhite);
+  text-align: center;
+}
+
+#proyect-features {
+  text-align: center;
+}
+
+#featurette {
+  background: url(../img/stuff-bg.jpg) 50% 100% repeat fixed;
+  background-size: cover;
+  color: var(--justWhite);
+  text-align: center;
+}
+
+/*------ CUSTOM ICON SPRINTES ----*/
+
+i.ci {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url("../img/icon-sprite.png") no-repeat;
+}
+
+.ci.ci-computer {
+  background-position: 0 0;
+}
+
+.ci.ci-watch {
+  background-position: -40px 0;
+}
+
+.ci.ci-calendar {
+  background-position: -80px 0;
+}
+
+.ci.ci-community {
+  background-position: -120px 0;
+}
+
+.ci.ci-instructor {
+  background-position: -160px 0;
+}
+
+.ci.ci-device {
+  background-position: -200px 0;
+}
