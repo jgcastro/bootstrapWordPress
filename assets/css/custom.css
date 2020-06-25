@@ -16,6 +16,7 @@
   --kindaBlack: #101010;
   --btnBorder: #d95131;
   --justWhite: #ffffff;
+  --specialGray: #ccc;
 }
 
 * {
@@ -85,6 +86,36 @@ img {
   max-width: 100%;
 }
 
+.modal-content {
+  background: url("../img/tile.jpg") top left repeat;
+}
+
+.badge.social {
+  background: var(--specialGray);
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: var(--justWhite);
+}
+
+.badge.social.twitter:hover {
+  background: #55acee;
+}
+
+.badge.social.facebook:hover {
+  background: #3b5998;
+}
+
+.linkedln:hover {
+  background: #3b5998;
+}
 #hero {
   background: url("../img/hero-bg.jpg") 50% 0 repeat fixed;
   min-height: 500px;
@@ -198,10 +229,46 @@ section h3 {
 }
 
 #featurette {
-  background: url(../img/stuff-bg.jpg) 50% 100% repeat fixed;
+  background: url("../img/stuff-bg.jpg") 50% 100% repeat fixed;
   background-size: cover;
   color: var(--justWhite);
   text-align: center;
+}
+
+#instructor {
+  background: var(--justWhite) url("../img/brad-elvis.png") 90% -10px no-repeat;
+}
+
+#instructor h2 {
+  margin: 0 0 20px;
+}
+
+#instructor .num {
+  display: table;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--justWhite);
+  line-height: 24px;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  background: var(--Salmon);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+#instructor .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#instructor .num span {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 /*------ CUSTOM ICON SPRINTES ----*/
@@ -235,4 +302,28 @@ i.ci {
 
 .ci.ci-device {
   background-position: -200px 0;
+}
+
+@media screen and (max-width: 991px) {
+  #instructor .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #instructor .num {
+    height: 100px;
+    width: 100px;
+    font-size: 22px;
+  }
+
+  #instructor .num span {
+    font-size: 16px;
+  }
+
+  .resource {
+    width: 100%;
+    margin-right: 0;
+  }
 }
