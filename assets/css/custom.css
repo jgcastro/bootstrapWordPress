@@ -17,6 +17,7 @@
   --btnBorder: #d95131;
   --justWhite: #ffffff;
   --specialGray: #ccc;
+  --citeGray: #777;
 }
 
 * {
@@ -116,6 +117,24 @@ img {
 .linkedln:hover {
   background: #3b5998;
 }
+
+blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote cite {
+  display: block;
+  color: var(--citeGray);
+  margin-top: 10px;
+}
+
+blockquote:before {
+  display: none;
+}
+
 #hero {
   background: url("../img/hero-bg.jpg") 50% 0 repeat fixed;
   min-height: 500px;
@@ -269,6 +288,20 @@ section h3 {
   display: block;
   font-size: 20px;
   font-weight: normal;
+}
+
+#kudos {
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 60px;
+}
+
+.testimonial img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /*------ CUSTOM ICON SPRINTES ----*/
