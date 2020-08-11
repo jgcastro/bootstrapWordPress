@@ -20,6 +20,7 @@
   --citeGray: #777;
   --otherGreen: #6a9b3d;
   --misteryRed: #c9302c;
+  --whiteGost: rgba(255, 255, 255, 0.8);
 }
 
 * {
@@ -65,6 +66,14 @@ h3 {
 
 h4 {
   font-size: 1.75rem;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+p.lead {
+  font-weight: normal;
 }
 
 a:link,
@@ -194,7 +203,7 @@ blockquote:before {
   vertical-align: top;
 }
 
-#price-timeline .price .active {
+#price-timeline .price.active {
   background: var(--Salmon);
 }
 
@@ -224,6 +233,10 @@ blockquote:before {
   color: var(--justWhite);
   font-weight: bold;
   display: block;
+}
+
+.row+.row {
+  margin-top: 20px;
 }
 
 section {
@@ -413,8 +426,22 @@ i.ci {
 
 @media screen and (max-width: 991px) {
   #instructor .container {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--whiteGost);
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+
+  #optin p {
+    margin: 0 0 10px;
+  }
+
+  #featurette iframe {
+    height: 240px;
   }
 }
 
@@ -425,7 +452,13 @@ i.ci {
     font-size: 22px;
   }
 
+
   #instructor .num span {
+    font-size: 16px;
+  }
+
+  #price-timeline .price h4,
+  span {
     font-size: 16px;
   }
 
