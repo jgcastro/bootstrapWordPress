@@ -287,10 +287,10 @@ section h3 {
 }
 
 #featurette {
+  text-align: center;
   background: url("../img/stuff-bg.jpg") 50% 100% repeat fixed;
   background-size: cover;
   color: var(--justWhite);
-  text-align: center;
 }
 
 #instructor {
